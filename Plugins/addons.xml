@@ -1,0 +1,82 @@
+<addons>
+<addon id="repository.mijnrepo" name="Mijn Repository" version="1.0" provider-name="Mijn Naam">
+  <extension point="xbmc.addon.repository" name="Mijn Repository">
+        <info compressed="false">http://mijnserver.com/Plugins/addons.xml</info>
+		<checksum>http://mijnserver.com/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://mijnserver.com/Plugins/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Mijn Repository</summary>
+    <description lang="en">Mijn repository voor mijn addons</description>
+    <platform>all</platform>
+  </extension>
+</addon provider-name="Michaël Arnauts" version="0.9.3" name="VTM GO" id="plugin.video.vtm.go">
+
+
+-<requires>
+
+<import version="2.26.0" addon="xbmc.python"/>
+
+<import version="2.6.0" addon="script.module.dateutil"/>
+
+<import version="1.6.8" addon="script.module.pysocks" optional="true"/>
+
+<import version="2.22.0" addon="script.module.requests"/>
+
+<import version="0.2.0" addon="script.module.routing"/>
+
+<import version="0.3.4" addon="script.module.inputstreamhelper"/>
+
+</requires>
+
+
+-<extension library="plugin.py" point="xbmc.python.pluginsource">
+
+<provides>video</provides>
+
+</extension>
+
+<extension library="service.py" point="xbmc.service"/>
+
+
+-<extension point="xbmc.addon.metadata">
+
+<summary lang="en_GB">Access the VTM GO library</summary>
+
+<description lang="en_GB">This add-on gives access to all live tv channels and all video-on-demand content available on the VTM GO platform.</description>
+
+<disclaimer lang="en_GB">This add-on is not officially commissioned/supported by DPG Media and is provided 'as is' without any warranty of any kind. The VTM GO name, VTM GO logo and channel icons are property of DPG Media and are used according to the fair use policy.</disclaimer>
+
+<platform>all</platform>
+
+<license>GPL-3.0</license>
+
+<news>v0.9.3 (26/01/2020) - Implement profiles and upgrade VTM GO API - Added fanart </news>
+
+<source>https://github.com/michaelarnauts/plugin.video.vtm.go</source>
+
+
+-<assets>
+
+<icon>resources/icon.png</icon>
+
+<fanart>resources/fanart.png</fanart>
+
+<screenshot>resources/screenshot01.jpg</screenshot>
+
+<screenshot>resources/screenshot02.jpg</screenshot>
+
+<screenshot>resources/screenshot03.jpg</screenshot>
+
+<screenshot>resources/screenshot04.jpg</screenshot>
+
+</assets>
+
+<reuselanguageinvoker>true</reuselanguageinvoker>
+
+</extension>
+
+</addon>>
+
+EN VANAF HIER DE GEGEVENS VAN JE EIGEN ADDON/WIZARD (DEZE REGEL WISSEN UITERAARD)
+</addons>
